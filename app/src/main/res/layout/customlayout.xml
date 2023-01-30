@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+>
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/foodTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/foodTypeTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImage"
+        android:layout_alignStart="@id/foodImage"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Food Type:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/foodType"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImage"
+        android:layout_alignTop="@id/foodTypeTitle"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@id/foodTypeTitle" />
+
+    <TextView
+        android:id="@+id/foodOriginTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodTypeTitle"
+        android:layout_alignStart="@id/foodTypeTitle"
+        android:layout_marginTop="10dp"
+        android:text="Food Origin:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/foodOrigin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodType"
+        android:layout_alignStart="@id/foodType"
+        android:layout_alignTop="@id/foodOriginTitle"
+        android:layout_toRightOf="@id/foodOriginTitle" />
+
+    <TextView
+        android:id="@+id/foodInstructionsTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodOriginTitle"
+        android:layout_alignStart="@id/foodTypeTitle"
+        android:layout_marginTop="10dp"
+        android:text="Instructions:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/foodInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodInstructionsTitle"
+        android:layout_alignStart="@id/foodTypeTitle"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>
